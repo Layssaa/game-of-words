@@ -1,0 +1,229 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(224, 223, 223);
+    font-size: 25px;
+    background: rgb(58, 58, 58);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    width: 90%;
+    height: 90%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #f3deb7;
+    opacity: 0.8;
+    background-image:  linear-gradient(#ecd3a4 1.5px, transparent 1.5px), linear-gradient(to right, #ecd3a4 1.5px, #f3deb7 1.5px);
+    background-size: 30px 30px;
+} 
+
+#library {
+    background: url('../imagens/old.jpg');
+    width: 5%;
+    height: 100%;  
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+#darkMode {
+    background: url('../imagens/teste.png');
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#changeLetter{
+    background: url('../imagens/download.png');
+    height: 35px; 
+    width: 35px;
+    background-size: cover;
+    border: none; 
+    border-radius: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#bookOptions {
+    width: 20%;
+    height: 100%; 
+    margin-left: 1%;
+    display: flex;
+    
+}
+
+#listBooks {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#listBooks img {
+    width: 50%;   
+    cursor: pointer;
+} 
+
+#gameScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 1%;
+    width: 50%;
+    height: 100%;
+} 
+
+#instrucion{
+    display: flex;
+    width: 400px;
+    height: 150px;
+    margin-top: 15px;
+    background: #9ad3bcce;
+    border: 1px solid #2523214f;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: #3a2d29;
+}
+
+#instrucion p {
+    font-size: 20px; 
+    margin: 0;
+}
+
+#executionRandomNumberButton{
+    background: linear-gradient(to right,#e28936, #D46703); 
+    color: #e5e2e2;
+    width: 150px;
+    height: 45px;
+    border-top: 1px solid #7c3c00e5;
+    border-right: 1px solid #7c3c00e5;
+    border-bottom: 3px solid #7c3c00e5;
+    border-left: 1px solid #7c3c00e5;
+    cursor: pointer;
+} 
+
+#executionRandomNumberButton:active {
+    border-bottom: 1px solid #7c3c00e5;
+}
+
+#textbook {
+    font-size: 15px;
+    width: 450px;
+    color:#151414;
+}
+.percentageScore{
+    width: 5%;
+    height: 70%;
+    background: #e06c00c2;
+    margin-left: 5%;
+    border-radius: 15%;
+}
+.scorePlayer{
+    width: 90px;
+    height: 10px;
+    border-radius: 10px;
+    background: #151515;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.scoringLevel {
+    background: #D46703;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+#palpiteum, #palpitedois {
+    border:none;
+    width: 150px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+#respostas {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+#buttonsend {
+    background: #D46703;
+    border: none;
+    width: 60px;
+    height: 30px;
+    align-self: center;
+    color: #D7D6D6;
+    cursor: pointer;
+}
+
+#template {
+    width: 26%;
+    height: 100%;
+    margin-left: 1%;
+    align-self: flex-end;   
+    display: flex;
+    flex-direction: column-reverse;
+    align-self: stretch;
+} 
+
+#raffleGame {
+    position: fixed; 
+    top: 90%;
+    margin-top: -150px; 
+    left: 50%;
+    margin-left: -125px;
+    background: #151414;
+    opacity: 0.7;
+    width: 250px;
+    height: 150px;
+    display: none;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#info {
+    width: 100%;
+    margin-top: 10px;
+    background:#151414;
+    opacity: 0.8;
+   
+    text-align: center;
+}
+
+#rodape {
+    font-family: 'Rajdhani', sans-serif;
+    width: 90%; 
+    height: 10%;
+    
+}

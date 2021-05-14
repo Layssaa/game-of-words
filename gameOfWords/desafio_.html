@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Game Of Words</title>
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div id="board">
+        <div id="library">
+            <button id="darkMode" onclick="changeDarkMode()"></button>
+            <button id="changeLetter" onclick="increasingLetter()"></button>
+        </div>
+        
+        <div id="bookOptions">
+            <div id="listBooks"></div>
+        </div>
+
+        <div id="gameScreen">
+            <div id="instrucion">
+                <p id='instruction'> </p>
+                <div id="result"></div>
+            </div>
+            <div id="screentwo">
+                <button id="executionRandomNumberButton" type="button" onclick="show()">RAFFLE</button>
+            </div>
+            <div id="respostas">
+                <div id="resposta1">
+                    <div class="scorePlayer" id="scorePlayer1"><div id="percentagePlayer1" class="percentageScore"></div></div>
+                    <input type="number" min="0" placeholder="Player 1" id="palpiteum">
+                </div>
+                <div id="resposta2">
+                    <div class="scorePlayer" id="scorePlayer2"><div id="percentagePlayer2" class="percentageScore"></div></div>
+                    <input type="number" min="0" placeholder="Player 2" id="palpitedois">
+                </div>
+                <button type="button" onclick="player()" id="buttonsend">Send</button>
+            </div>
+            <div id="textbook"></div>
+            
+        </div>
+
+        <form id="list"></form>
+        
+        <div id="template">
+
+            <div id='info'></div>
+        </div>
+        <div id="raffleGame">
+            <div id="executionRandomNumber"> </div>
+            <div id="executionRandomLetter"></div>
+        </div>
+    </div>
+
+   <!-- <footer id="rodape">Good luck!</footer> -->
+</body>
+<script src="./js/script_Copia.js"></script>
+
+</html>
